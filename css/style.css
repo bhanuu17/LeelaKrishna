@@ -153,7 +153,8 @@ ul, ol {
 }
 
 .btn-primary:hover {
-  background-color: var(--color-primary-dark);
+  background-color: #123c12;
+  color: white;
 }
 
 .btn-secondary {
@@ -167,8 +168,8 @@ ul, ol {
 
 /* Hero Section */
 .hero {
-  background-color: var(--color-primary-light);
-  background-image: url('https://images.pexels.com/photos/5945767/pexels-photo-5945767.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  background-color:#495057;
+  background-image: url('https://i.pinimg.com/736x/f3/23/d3/f323d35b9f6dcb9f4719fc69cdbe7800.jpg');
   background-size: cover;
   background-position: center;
   background-blend-mode: overlay;

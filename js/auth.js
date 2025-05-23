@@ -71,7 +71,7 @@ function handleLogin(e) {
   }
 
   // Mock login - in a real app, this would make an API call
-  if (email === 'demo@example.com' && password === 'password') {
+  if (email === 'pravalika@gmail.com' && password === '123456') {
     isLoggedIn = true;
     currentUser = { email };
     
@@ -87,7 +87,7 @@ function handleLogin(e) {
     // Show success message
     alert('Successfully logged in!');
   } else {
-    alert('Invalid credentials. Try demo@example.com / password');
+    alert('Invalid credentials.');
   }
 }
 

@@ -105,7 +105,7 @@ function updateCartUI() {
         <img src="${item.image}" alt="${item.name}" class="cart-item-image">
         <div class="cart-item-info">
           <div class="cart-item-name">${item.name}</div>
-          <div class="cart-item-price">$${item.price.toFixed(2)}</div>
+          <div class="cart-item-price">₹${item.price.toFixed(2)}</div>
           <div class="cart-item-quantity">
             <button class="cart-quantity-btn minus" data-id="${item.id}">-</button>
             <span class="cart-quantity-value">${item.quantity}</span>
@@ -114,7 +114,7 @@ function updateCartUI() {
           <button class="cart-item-remove" data-id="${item.id}">Remove</button>
         </div>
         <div class="cart-item-total">
-          $${(item.price * item.quantity).toFixed(2)}
+          ₹${(item.price * item.quantity).toFixed(2)}
         </div>
       `
       
@@ -148,7 +148,7 @@ function updateCartUI() {
   // Update total price
   const totalPrice = document.querySelector('.total-price')
   const total = cart.reduce((total, item) => total + (item.price * item.quantity), 0)
-  totalPrice.textContent = `$${total.toFixed(2)}`
+  totalPrice.textContent = `₹${total.toFixed(2)}`
 }
 
 // Update cart item quantity

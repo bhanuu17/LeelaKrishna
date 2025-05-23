@@ -2,26 +2,26 @@
 const products = [
   {
     id: 1,
-    name: "Chicken Pickle",
-    price: 60,
+    name: "Chicken Pickle/ 1kg ", 
+    price: 160,
     image: "https://media.istockphoto.com/id/872775970/photo/fruit-chutney.jpg?s=612x612&w=0&k=20&c=LfTRXVa63sA-zG5-8toxlPA64q5jMkCyfXdhP8SiiHw=",
-    description: "Traditional dill pickles made with fresh cucumbers, garlic, and dill.",
+    description: "A spoonful of heritage, a burst of flavor – homemade chicken pickle",
     category: "non-veg",
     inStock: true
   },
   {
     id: 2,
-    name: "Prawn Pickle",
-    price: 70,
+    name: "Prawn Pickle/ 1kg",
+    price: 170,
     image: "https://i.pinimg.com/736x/97/3f/c3/973fc3ea4b1deb39d4e0907bef37e87c.jpg",
-    description: "Our classic dill pickles with an extra kick of garlic and red pepper flakes.",
+    description: "Add a splash of ocean to your plate When prawns met spice, magic happened.",
     category: "non-veg",
     inStock: true
   },
   {
     id: 3,
-    name: "Red Chilli Pickle",
-    price: 40,
+    name: "Red Chilli Pickle/ 1kg",
+    price: 140,
     image: "https://maayeka.com/wp-content/uploads/2017/04/Easy-red-chili-pickle-laal-mirch-achar.jpg.webp",
     description: "Sweet and tangy pickle chips perfect for sandwiches and burgers.",
     category: "veg",
@@ -29,50 +29,87 @@ const products = [
   },
   {
     id: 4,
-    name: "Mango Pickle",
-    price: 60,
+    name: "Mango Pickle/ 1kg",
+    price: 160,
     image: "https://i.pinimg.com/736x/35/fa/49/35fa49c83bff731e8c85c6f04976b416.jpg",
-    description: "A mix of our most popular pickles in one convenient jar.",
+    description: "A mix of our most popular pickles in one convenient jarwith seasonal taste.",
     category: "Most Popular",
     // specialty
     inStock: true
   },
   {
     id: 5,
-    name: "Mutoon Pickle",
-    price: 90,
+    name: "Mutoon Pickle/ 1kg",
+    price: 190,
     image: "https://i.pinimg.com/736x/55/72/4f/55724fc1370289584d8f917f436f09a0.jpg",
-    description: "Perfect for snacking, these dill spears are crisp and flavorful.",
+    description: "Fiery, tangy, and unforgettable—mutton pickle that speaks to your soul",
     category: "non-veg",
     inStock: true
   },
   {
     id: 6,
-    name: "Gongura pickle",
-    price: 50,
+    name: "Gongura pickle/ 1kg",
+    price: 150,
     image: "https://i.pinimg.com/736x/19/b9/aa/19b9aab9b6657f49962afa24e3c42457.jpg",
-    description: "Fiery hot pickles with roasted jalapeños for heat lovers.",
+    description: "Crafted with love, our green gongura pickle brings tradition to your table.",
     category: "veg",
     inStock: true
   },
   {
     id: 7,
-    name: "Amla Pickle",
-    price: 50,
+    name: "Amla Pickle/ 1kg",
+    price: 150,
     image: "https://i.pinimg.com/736x/20/dd/96/20dd961e8b7b0255baf3843db7d8bcd7.jpg",
-    description: "Naturally sweetened with local honey for a unique flavor profile.",
+    description: "Naturally sweetened with the local honey for a unique flavor profile.",
     category: "veg",
     inStock: true
   },
   {
     id: 8,
-    name: "Fish Pickle",
-    price: 80,
+    name: "Fish Pickle/ 1kg",
+    price: 180,
     image: "https://vaya.in/recipes/wp-content/uploads/2019/01/rsz_fish_pickle.jpg",
     description: "Try our exclusive seasonal pickles with this subscription. Price per month.",
     category: "non-veg",
     inStock: false
-  }
+  },
+  {
+    id: 9,
+    name: "Lemon Pickle/ 1kg",
+    price: 80,
+    image: "https://i.pinimg.com/736x/34/61/c7/3461c757712127376a638a8cb843b595.jpg",
+    description: "Try our exclusive seasonal pickles with this subscription. Price per month.",
+    category: "veg",
+    inStock: false
+  },
+   {
+    id: 10,
+    name: "Garlic Pickle/ 1kg",
+    price: 180,
+    image: "https://i.pinimg.com/736x/c2/b4/85/c2b485f130b21d9e61ec9640205d09da.jpg",
+    description: "Perfect for the snacking, these dill spears are crisp and flavorful.",
+    category: "veg",
+    inStock: true
+  },
+   {
+    id: 11,
+    name: "Tomato Pickle/ 1kg",
+    price: 160,
+    image: "https://i.pinimg.com/736x/7f/ee/24/7fee24807a5661db32eda18c5100114d.jpg",
+    description: "tomato pickle brings homemade goodness to your table.",
+    category: "Most Popular",
+    inStock: true
+  },
+   {
+    id: 12,
+    name: "Green chilli Pickle/ 1kg",
+    price: 140,
+    image: "https://i.pinimg.com/736x/a2/1f/e6/a21fe607c6edceafc859ad838eea4dad.jpg",
+    description: "Crafted with love, our green chilli pickle brings tradition to your table.",
+    category: "veg",
+    inStock: true
+  },
+
 ];
 
 // Function to initialize the products
@@ -98,7 +135,7 @@ function renderProducts(productsToRender) {
         <p class="product-category">${capitalizeFirstLetter(product.category)}</p>
         <p class="product-description">${product.description}</p>
         <div class="product-bottom">
-          <span class="product-price">$${product.price.toFixed(2)}</span>
+          <span class="product-price">₹${product.price.toFixed(2)}</span>
           ${product.inStock ? 
             `<button class="add-to-cart" data-id="${product.id}">Add to Cart</button>` : 
             `<button class="out-of-stock" disabled>Out of Stock</button>`
